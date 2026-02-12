@@ -3,3 +3,13 @@
 1. Cuándo la cantidad de registros es bastante ámplia. 
 2. Cuándo son muchas personas las que manipulan de los datos
 3. Latencia de respuesta cuando se desea consultar cierta información
+
+RTTA//:
+Cuando la cantidad de registros es bastante amplia:
+Se debe migrar a un SGBD cuando el volumen de datos crece considerablemente, ya que los archivos planos se vuelven difíciles de administrar, más lentos para realizar búsquedas y más propensos a errores o duplicación de información, mientras que un SGBD permite organizar, indexar y manejar grandes cantidades de datos de forma eficiente.
+
+Cuando muchas personas manipulan los datos:
+Es necesario migrar cuando varios usuarios necesitan acceder y modificar la información al mismo tiempo, porque los archivos planos no gestionan adecuadamente la concurrencia ni ofrecen control de permisos, mientras que un SGBD permite acceso simultáneo seguro, manejo de transacciones y control de roles.
+
+Latencia de respuesta en consultas:
+Se debe considerar la migración cuando las consultas comienzan a tardar demasiado, ya que los archivos planos requieren recorrer grandes volúmenes de información sin optimización, mientras que un SGBD utiliza índices y mecanismos de optimización que mejoran significativamente el tiempo de respuesta.
